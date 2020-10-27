@@ -37,6 +37,13 @@ proc listen*(node: EventTarget, event: cstring, handler: proc (ev: Event), opts:
     () => node.removeEventListener(event, handler, opts)
 
 
+proc attr*(node: Element, attribute: cstring, value: cstring = "") =
+    if value == "":
+        node.removeAttribute(attribute)
+    elif node.getAttribute(attribute) != value:
+        node.setAttribute(attribute, value)
+
+
 type HtmlTag* = ref object
     e: Element
     n: seq[Node]
