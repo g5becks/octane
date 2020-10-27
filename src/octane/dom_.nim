@@ -14,15 +14,11 @@ proc detach*(node: Node)=
     ## Removes `node` from dom.
     node.parentNode.removeChild(node)
 
+
+
 proc element*(name: cstring): Element =
     ## Creates a new dom element.
     result = document.createElement(name)
-
-#[
-proc destroyEach(iterations: seq[any], detaching: any) =
-    for i in low(iterations)..<high(iterations):
-        if not iterations[i].isNil
-]#
 
 
 type HtmlTag* = ref object
@@ -56,3 +52,9 @@ proc p*(self: HtmlTag, html: cstring) =
     self.d()
     self.h(html)
     self.i(self.a)
+
+
+proc destroyEach*(iterations: seq[HtmlTag], detaching: Node) =
+    for i, v in iterations:
+        if not v.isNil:
+            v.d(detaching)
