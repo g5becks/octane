@@ -1,16 +1,21 @@
 import dom
 
+
 proc append*(target: Node, node: Node) =
+    ## Append `node` to `target`.
     target.appendChild(node)
 
-
+# Inserts
 proc insert*(target: Node, node: Node, anchor: Node)=
+    ## Inserts `node` before `anchor`.
     target.insertBefore(node, if anchor.isNil: nil else: anchor)
 
 proc detach*(node: Node)=
+    ## Removes `node` from dom.
     node.parentNode.removeChild(node)
 
 proc element*(name: cstring): Element =
+    ## Creates a new dom element.
     result = document.createElement(name)
 
 #[
