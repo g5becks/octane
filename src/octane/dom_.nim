@@ -1,5 +1,5 @@
 import dom
-
+import sugar
 proc append*(target: Node, node: Node) =
     ## Append `node` to `target`.
     target.appendChild(node)
@@ -20,8 +20,22 @@ proc element*(name: cstring): Element =
     result = document.createElement(name)
 
 # TODO figure out if this proc actually works
+# Fix it if not
 proc svgElement*(name: cstring): Element =
-    document.createElement(name)
+    ## create
+    result = document.createElement(name)
+
+
+proc text*(data: cstring): Node =
+    ## Creates a text Node using `data`.
+    result = document.createTextNode(data)
+
+proc space*(): Node = text(" ")
+
+proc listen*(node: EventTarget, event: cstring, handler: proc (ev: Event), opts: AddEventListenerOptions = AddEventListenerOptions()): proc() =
+    node.addEventListener(event, handler, opts)
+    () => node.removeEventListener(event, handler, opts)
+
 
 type HtmlTag* = ref object
     e: Element
