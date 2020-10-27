@@ -1,6 +1,5 @@
 import dom
 
-
 proc append*(target: Node, node: Node) =
     ## Append `node` to `target`.
     target.appendChild(node)
@@ -20,6 +19,9 @@ proc element*(name: cstring): Element =
     ## Creates a new dom element.
     result = document.createElement(name)
 
+# TODO figure out if this proc actually works
+proc svgElement*(name: cstring): Element =
+    document.createElement(name)
 
 type HtmlTag* = ref object
     e: Element
