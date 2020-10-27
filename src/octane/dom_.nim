@@ -1,6 +1,5 @@
 import dom
 import sugar
-import sequtils
 proc append*(target: Node, node: Node) =
     ## Append `node` to `target`.
     target.appendChild(node)
@@ -47,13 +46,17 @@ proc attr*(node: Element, attribute: cstring, value: cstring = "") =
 proc children*(el: Element): seq[Node] =
     el.childNodes
 
-proc claim_text*(nodes: seq[Node], data: cstring): Node =
+proc claimText*(nodes: seq[Node], data: cstring): Node =
     for i, v in nodes:
         if v.NodeType == 3:
             v.data = "" + data
             nodes.delete(i, 1)
             return nodes[0]
     return text(data)
+
+
+proc setInputValue*(input: InputElement, value: string): void =
+    input.value = value
 
 
 type HtmlTag* = ref object
