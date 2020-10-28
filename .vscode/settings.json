@@ -1,3 +1,10 @@
 {
-    "deepscan.ignoreConfirmWarning": true
+    "deepscan.ignoreConfirmWarning": true,
+    "cSpell.words": [
+        "is",
+        "is nil window parent",
+        "nil",
+        "parent",
+        "window"
+    ]
 }

@@ -1,5 +1,7 @@
 import dom
 import sugar
+import strformat
+import jsffi
 proc append*(target: Node, node: Node) =
     ## Append `node` to `target`.
     target.appendChild(node)
@@ -57,6 +59,26 @@ proc claimText*(nodes: seq[Node], data: cstring): Node =
 
 proc setInputValue*(input: InputElement, value: string): void =
     input.value = value
+
+proc setInputType*(input: InputElement, inputType: cstring) =
+    try:
+        input.`type` = inputType
+    except:
+        echo getCurrentException()
+
+
+var crossOrigin = jsUndefined
+proc isCrossOrigin*(): bool =
+    var origin: bool
+    if crossOrigin.isNil:
+        origin = false
+    try:
+        if isUndefined(window) and not isUndefined(window.parent):
+            {.emit: """ void window.parent.document""".}
+    except:
+        origin = true
+    result = origin
+
 
 
 type HtmlTag* = ref object
