@@ -20,5 +20,8 @@ proc root*[T](fn: () -> T): T {.
 proc sample*[T](fn: () -> T): T {.
     importcpp: """sinuous.sample(#)""", nodecl.}
 
-proc transaction[T](fn: () -> T): T {.
+proc transaction*[T](fn: () -> T): T {.
     importcpp: """sinuous.transaction(#)""", nodecl.}
+
+proc on*[T: () -> auto](reactives: seq[Reactive[any]], fn: T, args: varargs[
+    any]): T {.importcpp: """sinuous.on(#,#,#)""", nodecl.}
