@@ -16,3 +16,9 @@ proc isListening*(): bool {.
 
 proc root*[T](fn: () -> T): T {.
     importcpp: """sinuous.root(#)""", nodecl.}
+
+proc sample*[T](fn: () -> T): T {.
+    importcpp: """sinuous.sample(#)""", nodecl.}
+
+proc transaction[T](fn: () -> T): T {.
+    importcpp: """sinuous.transaction(#)""", nodecl.}
