@@ -10,3 +10,6 @@ proc subscribe*[T](observer: proc(): T): () -> void {.
 
 proc unsubscribe*[T](observer: () -> T): void {.
     importcpp: """sinuous.unsubscribe(#)""", nodecl.}
+
+proc isListening*(): bool {.
+    importcpp: """sinuous.isLisenting()""", nodecl.}
