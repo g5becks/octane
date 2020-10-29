@@ -1,0 +1,42 @@
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+SIGSEGV: Illegal storage access. (Attempt to read from nil?)
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+SIGSEGV: Illegal storage access. (Attempt to read from nil?)
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+SIGSEGV: Illegal storage access. (Attempt to read from nil?)
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+SIGSEGV: Illegal storage access. (Attempt to read from nil?)
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+SIGSEGV: Illegal storage access. (Attempt to read from nil?)
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+/home/beckspoppn/Dev/octane/src/octane/dom_.nim(5, 20) template/generic instantiation of `none` from here
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/nim.cfg' [Conf]
+Hint: used config file '/home/beckspoppn/.choosenim/toolchains/nim-1.4.0/config/config.nims' [Conf]
+SIGSEGV: Illegal storage access. (Attempt to read from nil?)

@@ -1,0 +1,33 @@
+{
+  "name": "octane",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g5becks/octane.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g5becks/octane/issues"
+  },
+  "homepage": "https://github.com/g5becks/octane#readme",
+  "dependencies": {
+    "csx": "^10.0.1",
+    "cxs": "^6.2.0",
+    "otion": "^0.6.2",
+    "print": "^1.2.0",
+    "sinuous": "^0.27.11"
+  },
+  "devDependencies": {
+    "esbuild": "^0.8.0"
+  }
+}
