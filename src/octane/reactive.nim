@@ -1,11 +1,11 @@
 import sugar
-type Reactive[T] = proc(): T | proc(nextValue: T): T
+type Reactive*[T] = () -> T | (T) -> T
 proc reactive*[T](value: T): Reactive[T] {.importcpp: """sinuous.o(#)""", nodecl.}
 
-proc computed*[T: proc(): auto](observer: T): T {.
+proc computed*[T: () -> auto](observer: T): T {.
     importcpp: """sinuous.computed(#)""", nodecl.}
 
-proc subscribe*[T](observer: proc(): T): () -> void {.
+proc subscribe*[T](observer: () -> T): () -> void {.
     importcpp: """sinuous.subscribe(#)""", nodecl.}
 
 proc unsubscribe*[T](observer: () -> T): void {.
@@ -13,3 +13,6 @@ proc unsubscribe*[T](observer: () -> T): void {.
 
 proc isListening*(): bool {.
     importcpp: """sinuous.isLisenting()""", nodecl.}
+
+proc root*[T](fn: () -> T): T {.
+    importcpp: """sinuous.root(#)""", nodecl.}
