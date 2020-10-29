@@ -25,3 +25,6 @@ proc transaction*[T](fn: () -> T): T {.
 
 proc on*[T: () -> auto](reactives: seq[Reactive[any]], fn: T, args: varargs[
     any]): T {.importcpp: """sinuous.on(#,#,#)""", nodecl.}
+
+proc cleanup*[T: () -> auto](fn: T): T {.
+    importcpp: """sinuous.cleanup(#)""", nodecl.}
